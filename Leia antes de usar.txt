@@ -1,0 +1,14 @@
+O banco de dados do nosso projeto foi feito com o "phpmyadmin"
+para que o trabalho rode da melhor forma possível o arquivo .sql 
+deve ser importado e colocado em uma database chamada "cadastro" e 
+colocado na 3306, sem senha e hospedado no "localhost", essas foram 
+as predefinições do XAMPP, qualquer alteração nessas configurações irá 
+causar mal funcionamento da aplicação.
+
+O banco está setado nessas condições:
+$host = "localhost";
+$user = "root";
+$pass = "";
+$dbname = "cadastro";
+$port = 3306;
+$conn = new PDO("mysql:host=$host;port=$port;dbname=".$dbname, $user, $pass); 
